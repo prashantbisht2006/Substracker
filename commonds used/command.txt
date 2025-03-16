@@ -1,9 +1,0 @@
-type = module in the module is used to use the new import tx rather then the require in exxpress.
-pnpx i --save-dev nodemon; to down load node mon it restartthe server every change
-pnpx express-generator --no-view --git ===> is uses to make the tamplet or the text of the ffolder whch my application waant o use 
-pnpm install dotenv====> this command inatall env package which allow us to retreive veriables like any api kkey or passkey
-
-
-pnpm install jsonwebtoken bcrypt === to install the authentication packages
-
-npm i @arcjet/node ===> to install the arcjet
