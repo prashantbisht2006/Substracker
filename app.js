@@ -7,6 +7,7 @@ import connctTODatabase from "./database/mongodb.js";
 import errormiddleware from "./middleware/error.middleware.js";
 import cookieParser from "cookie-parser";
 import arcjetmiddleware from "./middleware/arcjet.middleware.js";
+import authorize from "./middleware/auth.middleware.js";
 const app = express();
 app.get("/",(req,res)=>{
     res.send("hey! welcome to the prshants web page .")
@@ -17,7 +18,7 @@ app.use(cookieParser());
 
 app.use("/api/v1/auth",authRouter);
 app.use("/api/v1/user",userRoute);
-app.use("/api/v1/subs",subscription);
+app.use("/api/v1/subs",authorize,subscription);
 app.use(errormiddleware);
 app.use(arcjetmiddleware);
 
